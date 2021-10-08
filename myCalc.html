@@ -15,31 +15,31 @@
                     <td colspan="5"><input type="text" value="" id="input" size="100px" style="padding: 20px; border: thin solid transparent;"></td>
                 </tr>
                 <tr>
-                    <td style="width: auto;"><button onclick="key1()" style="padding: 0px; width: 45px; height: 45px; margin: 0 auto;">1</button></td>
-                    <td><button onclick="key2()" style="padding: 0px; width: 45px; height: 45px; margin: 0 auto;">2</button></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td style="width: 1px;"><button onclick="key1()" style=" width: 45px; height: 45px; margin: 0 auto;">1</button></td>
+                    <td style="width: 1px;"><button onclick="key2()" style="width: 45px; height: 45px; margin: 0 auto;">2</button></td>
+                    <td style="width: 1px;"><button onclick="key3()" style=" width: 45px; height: 45px; margin: 0 auto;">3</button></td>
+                    <td style="width: 1px;"><button onclick="keyPlus()" style="padding: 0px; width: 45px; height: 45px; margin: 0 auto;">+</button></td>
+                    <td style="width: 1px;"><button onclick="keyMinus()" style="padding: 0px; width: 45px; height: 45px; margin: 0 auto;">-</button></td>
+                </tr>
+                <tr>
+                    <td style="width: 1px;"><button onclick="key1()" style=" width: 45px; height: 45px; margin: 0 auto;">1</button></td>
+                    <td style="width: 1px;"><button onclick="key2()" style="width: 45px; height: 45px; margin: 0 auto;">2</button></td>
+                    <td style="width: 1px;"><button onclick="key3()" style=" width: 45px; height: 45px; margin: 0 auto;">3</button></td>
+                    <td style="width: 1px;"><button onclick="keyPlus()" style="padding: 0px; width: 45px; height: 45px; margin: 0 auto;">+</button></td>
+                    <td style="width: 1px;"><button onclick="keyMinus()" style="padding: 0px; width: 45px; height: 45px; margin: 0 auto;">-</button></td>
                 </tr>
                 <tr>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td rowspan="2"></td>
+                    <td rowspan="2"><button onclick="operate()">=</button></td>
                 </tr>
                 <tr>
                     <td></td>
                     <td></td>
                     <td><button onclick="multi()">*</button></td>
-                    <td><button onclick="operate()">=</button></td> 
+                    <td></td> 
                     
                 </tr>
             </table>
@@ -55,7 +55,15 @@
         function key2() {
             input.value += 2;
         }
-        
+        function key3() {
+            input.value += 3;
+        }
+        function keyPlus() {
+            input.value += "+";
+        }
+        function keyMinus() {
+            input.value += "-";
+        }
         function multi() {
             input.value += "*";
         }

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <div >
+        <div>
+            <table cellpadding="5px" cellspacing="0" border="5px">
+                <tr>
+                    <td colspan="5"><input type="text" value="" id="input" size="100px" style="padding: 20px; border: thin solid transparent;"></td>
+                </tr>
+                <tr>
+                    <td style="width: auto;"><button onclick="key1()" style="padding: 0px; width: 45px; height: 45px; margin: 0 auto;">1</button></td>
+                    <td><button onclick="key2()" style="padding: 0px; width: 45px; height: 45px; margin: 0 auto;">2</button></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td rowspan="2"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><button onclick="multi()">*</button></td>
+                    <td><button onclick="operate()">=</button></td> 
+                    
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript">
+        function key1() {
+            input.value += 1;
+        }
+        function key2() {
+            input.value += 2;
+        }
+        
+        function multi() {
+            input.value += "*";
+        }
+        function operate() {
+            input.value = eval(input.value);
+        }
+    </script>
+</body>
+</html>

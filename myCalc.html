@@ -40,6 +40,7 @@
                     <td style="width: 1px;"><button onclick="key0()" style="width: 45px; height: 45px; margin: 0 auto;">0</button></td>
                     <td style="width: 1px;"><button onclick="keySqr()" style=" width: 45px; height: 45px; margin: 0 auto;">X<sup style="font-size: 5px;">2</sup></button></td>
                     <td style="width: 1px;"><button onclick="keyRightBracket()" style="padding: 0px; width: 45px; height: 45px; margin: 0 auto;">)</button></td>
+                    <td style="width: 1px;"><button onclick="cl()" style="padding: 0px; width: 45px; height: 45px; margin: 0 auto;">C.E</button></td>
                     
                 </tr>
             </table>
@@ -86,6 +87,12 @@
         }
 
         // braces
+        function keyRightBracket() {
+            input.value += ")";
+        }
+        function keyLeftBracket() {
+            input.value += "(";
+        }
 
         // operators
         function keyPlus() {
@@ -94,12 +101,26 @@
         function keyMinus() {
             input.value += "-";
         }
-        function multi() {
+        function keyMulti() {
             input.value += "*";
         }
+        function keyDiv() {
+            input.value += "/";
+        }
+
+        function keySqr() {
+            input.value *= input.value;
+        }
+
+        // equal-to sign
         function operate() {
             input.value = eval(input.value);
         }
+        // clear
+        function clear() {
+            input.value = Clear(input.value);
+        }
+
     </script>
 </body>
 </html>

@@ -5,13 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
+<style>
+    .input{
+        background-color: thistle;
+    }
+    #input{
+        outline-color: transparent;
+        background-color: papayawhip;
+    }
+    .cal_size{
+        width: 100%;
+        background-color: thistle;
+    }
+    .cal_in{
+        margin: 0 auto;
+    }
+</style>
 <body>
-    <div >
+    <div class="cal_size">
         <div>
-            <table cellpadding="5px" cellspacing="0" border="5px">
-                <tr>
+            <table cellpadding="5px" cellspacing="0" border="5px" class="cal_in">
+                <tr class="input">
                     <td colspan="5"><input type="text" value="" id="input" size="100px" style="padding: 20px; border: thin solid transparent;"></td>
                 </tr>
                 <tr>
@@ -46,8 +62,10 @@
             </table>
         </div>
     </div>
+    
+    <div><marquee behavior="" direction="right" class="input" style="width: 100%;">(-+/*) x<sup>2</sup>+y<sup>3</sup>-z<sup>4</sup>--log<sub>2</sub>x<sup>2</sup>+log<sub>3</sub>y<sup>2</sup> = 0</marquee></div>
 
-
+    <div></div>
 
     <script type="text/javascript">function key1(){ input.value +=1;} function key2(){ input.value +=2;} function key3(){ input.value +=3;} function key4(){ input.value +=4;} function key5(){ input.value +=5;} function key6(){ input.value +=6;} function key7(){ input.value +=7;} function key8(){ input.value +=8;} function key9(){ input.value +=9;} function key0(){ input.value +=0;} function key00(){ input.value +="00";} function keyRightBracket(){ input.value +=")";} function keyLeftBracket(){ input.value +="(";} function keyPlus(){ input.value +="+";} function keyMinus(){ input.value +="-";} function keyMulti(){ input.value +="*";} function keyDiv(){ input.value +="/";} function keySqr(){ input.value *=input.value;} function operate(){ input.value=eval(input.value);} function clear(){ input.value=Clear(input.value);} </script>
 </body>

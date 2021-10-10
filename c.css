@@ -1,0 +1,36 @@
+#animi1 {
+    animation-name: animi1;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-direction: alternate-reverse;
+} 
+@keyframes animi1 {
+    from{
+        transform: translateY(0px);
+        top: 0;
+    }
+    to {
+        transform: translateY(340px);
+        color: aquamarine;
+        top: 0;
+            
+      }
+}
+    
+
+.input{
+    background-color: thistle;
+}
+#input{
+    outline-color: transparent;
+    background-color: papayawhip;
+}
+.cal_size{
+    width: 100%;
+    background-color: thistle;
+}
+.cal_in{
+    margin: 0 auto;
+}

@@ -38,6 +38,7 @@
 }
 
 .ring {
+    /* transform: rotateY(30deg); */
     border: thin solid red;
     width: 200px;
     height: 200px;
@@ -55,13 +56,9 @@
 }
 @keyframes ring {
     from{
-        transform: rotateX(0deg),translateX(0px);
-        top: 0;
+        transform: rotateY(360deg);
+        transform:  translate(200px);
 
-    }
-    to{
-        transform: rotateX(360deg), translateX(200px);
-        top: 0;
     }
 }
 
